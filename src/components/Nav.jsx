@@ -25,21 +25,20 @@ function Nav({ topics, onChangeMode }) {
     <nav>
       <ol>
         {topics.map((topic) => (
-            
-        ))}</ol>
-      <li key={t.id}>
-        <a
-          id={t.id}
-          href={"/read/" + t.id}
-          onClick={(event) => {
-            event.preventDefault();
-            onChangeMode(Number(event.target.id));
-          }}
-        >
-          {t.title}
-        </a>
-      </li>
-      ); }
+          <li key={topic.id}>
+            <a
+              id={topic.id}
+              href={"/read/" + topic.id}
+              onClick={(event) => {
+                event.preventDefault();
+                onChangeMode(Number(event.target.id));
+              }}
+            >
+              {topic.title}
+            </a>
+          </li>
+        ))}
+      </ol>
     </nav>
   );
 }
