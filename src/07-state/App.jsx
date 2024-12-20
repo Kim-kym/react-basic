@@ -1,4 +1,22 @@
 import { useState } from "react"; //  useState Hook 사용
+
+// function Header(props) {
+//     console.log("props", props.title);
+//     return (
+//         <header>
+//         <h1>
+//             <a heref="/"
+//             onClick={(event) => {
+//                 event.preventDefault();
+//                 props.onChangeMode();
+//             }}
+//             >
+//                 {props.title}
+//             </a>
+//         </h1>
+//         </header>
+//     )
+// }
 function Header(props) {
   console.log("props", props.title);
   return (
